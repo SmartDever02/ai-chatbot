@@ -8,8 +8,8 @@ export default function GoogleOneTap() {
   return (
     <div
       id="g_id_onload"
-      data-client_id={process.env.GOOGLE_CLIENT_ID}
-      data-login_uri={`${process.env.PUBLIC_HOST_URL}/api/auth/callback/google`}
+      data-client_id={process.env.NEXT_PULBIC_GOOGLE_CLIENT_ID}
+      data-login_uri={`${process.env.NEXT_PUBLIC_HOST_URL}/api/auth/callback/google`}
       data-auto_select="true"
     ></div>
   )
