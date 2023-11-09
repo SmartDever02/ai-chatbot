@@ -1,4 +1,5 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
+import GoogleProvider from 'next-auth/providers/google'
 import GitHub from 'next-auth/providers/github'
 import Google from 'next-auth/providers/google'
 
@@ -19,7 +20,7 @@ export const {
   trustHost: true,
   providers: [
     GitHub,
-    Google({
+    GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET
     })
